@@ -6,5 +6,10 @@ Port 8081 for the data/realtime update
 
 how to run
 ```
-docker run --rm -d -it -p 80:80 -p 8081:8081 --name goaccess -v /var/log/nginx:/var/log/nginx kenny1har/goaccess
+docker run --rm -d -it -p 80:80 -p 8081:8081 --name goaccess -v /var/log/nginx:/var/log/nginx kenny1har/nginx-goaccess
 ```
+
+Open in your web browser:
+
+http://localhost
+
