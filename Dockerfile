@@ -9,7 +9,7 @@ RUN echo "deb http://deb.goaccess.io/ trusty main" | tee -a /etc/apt/sources.lis
 RUN wget -O - http://deb.goaccess.io/gnugpg.key | apt-key add -
 RUN apt-get update
 RUN apt-get install -y goaccess nodejs
-RUN npm install http-server -g
+RUN npm install http-server-with-auth -g
 RUN apt-get autoremove -y && apt-get clean
 RUN mkdir /var/log/nginx
 RUN mkdir /app
